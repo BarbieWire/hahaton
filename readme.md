@@ -15,7 +15,7 @@ Before you begin, make sure you have the following installed:
 
 ---
 
-## Getting Started
+## Getting Started (Dev Mode)
 
 ### 1. Set Up Backend (FastAPI)
 
