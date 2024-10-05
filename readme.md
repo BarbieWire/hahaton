@@ -39,7 +39,7 @@ Before you begin, make sure you have the following installed:
     ```
 
 4. **Run the FastAPI server**:
-
+cd
     ```bash
     uvicorn main:app --reload --host 0.0.0.0 --port 8000
     ```
