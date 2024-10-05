@@ -20,6 +20,7 @@ const CourseDetails = () => {
             <Breadcrumbs />
             <h1 className="text-4xl font-bold mb-4">{course.title}</h1>
             <p className="text-lg">{course.description}</p>
+            
         </div>
     );
 };
