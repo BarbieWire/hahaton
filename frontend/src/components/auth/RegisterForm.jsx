@@ -1,4 +1,3 @@
-// components/Register.js
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
@@ -31,8 +30,7 @@ const RegisterForm = () => {
 
     return (
         <div className="max-w-md mx-auto mt-10">
-            <h2 className="text-2xl font-bold mb-6 text-center">Register</h2>
-            <form onSubmit={handleSubmit(onSubmit)} className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <form onSubmit={handleSubmit(onSubmit)} className="bg-white rounded px-8 pt-6 pb-8 mb-4">
                 <CustomInput label="Name" name="name" register={register} errors={errors} />
                 <CustomInput label="Email" name="email" type="email" register={register} errors={errors} />
                 <CustomInput label="Password" name="password" type="password" register={register} errors={errors} />
@@ -40,7 +38,7 @@ const RegisterForm = () => {
                 <div className="flex items-center justify-between">
                     <button
                         type="submit"
-                        className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        className="w-full bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
                     >
                         Register
                     </button>
