@@ -2,6 +2,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import { LeftSidebar } from '../components/navigation/LeftSidebar';
+import NavBar from '../components/navigation/NavBar';
 
 const Layout = () => {
     return (
@@ -11,6 +12,7 @@ const Layout = () => {
 
             {/* Page Content */}
             <div className="w-full max-w-full text-center p-3">
+                <NavBar />
                 <Outlet />
             </div>
         </div>
