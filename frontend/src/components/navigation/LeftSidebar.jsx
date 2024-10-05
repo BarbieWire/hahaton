@@ -1,39 +1,36 @@
-import React from 'react'
+import React from "react";
+import { Sidebar } from "flowbite-react";
+import { HiArrowSmRight, HiChartPie, HiInbox, HiShoppingBag, HiTable, HiUser, HiViewBoards } from "react-icons/hi";
 
-const LeftSidebar = () => {
+export function LeftSidebar() {
     return (
-        <div class="h-screen w-20 bg-gray-900 flex flex-col items-center py-4 rounded-lg">
-            <div class="mb-8">
-                <button class="bg-white p-3 rounded-full">
-                    button1
-                </button>
-            </div>
-
-            <div class="mb-8">
-                <button class="text-gray-400 hover:text-white p-3">
-                    button1
-                </button>
-            </div>
-
-            <div class="mb-8">
-                <button class="text-gray-400 hover:text-white p-3">
-                    button1
-                </button>
-            </div>
-
-            <div class="mb-8">
-                <button class="text-gray-400 hover:text-white p-3">
-                    button1
-                </button>
-            </div>
-
-            <div class="mt-auto mb-8">
-                <button class="text-gray-400 hover:text-white p-3 ">
-                    button1
-                </button>
-            </div>
-        </div>
-    )
+        <Sidebar aria-label="Sidebar with logo branding example">
+            <Sidebar.Logo href="#" img="/favicon.svg" imgAlt="logo">
+                Flowbite
+            </Sidebar.Logo>
+            <Sidebar.Items>
+                <Sidebar.ItemGroup>
+                    <Sidebar.Item href="#" icon={HiChartPie}>
+                    </Sidebar.Item>
+                    <Sidebar.Item href="#" icon={HiViewBoards}>
+                    </Sidebar.Item>
+                    <Sidebar.Item href="#" icon={HiInbox}>
+                    
+                    </Sidebar.Item>
+                    <Sidebar.Item href="#" icon={HiUser}>
+                    
+                    </Sidebar.Item>
+                    <Sidebar.Item href="#" icon={HiShoppingBag}>
+                    
+                    </Sidebar.Item>
+                    <Sidebar.Item href="#" icon={HiArrowSmRight}>
+                    
+                    </Sidebar.Item>
+                    <Sidebar.Item href="#" icon={HiTable}>
+                    
+                    </Sidebar.Item>
+                </Sidebar.ItemGroup>
+            </Sidebar.Items>
+        </Sidebar>
+    );
 }
-
-export default LeftSidebar
