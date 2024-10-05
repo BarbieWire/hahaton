@@ -17,7 +17,7 @@ import { BsCalendar4, BsBag, BsCheck2Square } from "react-icons/bs";
 
 export function LeftSidebar() {
     return (
-        <div className="fixed left-2 bottom-5 top-5 rounded-lg w-24 bg-black text-white z-50 flex flex-col pt-4 pb-4"> {/* Added padding */}
+        <div className="fixed left-2 bottom-2 top-2 rounded-lg w-24 bg-black text-white z-50 flex flex-col pt-4 pb-4"> {/* Added padding */}
              {/* Avatar Section */}
              <div className="flex items-center justify-center h-16">
                 <img
