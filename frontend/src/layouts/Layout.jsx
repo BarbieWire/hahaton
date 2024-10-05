@@ -5,12 +5,12 @@ import { LeftSidebar } from '../components/navigation/LeftSidebar';
 
 const Layout = () => {
     return (
-        <div className='flex gap-5 p-5'>
+        <div className='flex min-h-screen gap-5 p-5'>
             {/*Left Side Bar */}
             <LeftSidebar />
 
             {/* Page Content */}
-            <div className="max-w-md text-center p-3">
+            <div className="w-full max-w-full text-center p-3">
                 <Outlet />
             </div>
         </div>
