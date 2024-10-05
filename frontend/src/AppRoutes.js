@@ -4,6 +4,7 @@ import Layout from './layouts/Layout';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import CourseDetails from './pages/CourseDetails';
 
 const AppRoutes = () => {
     const routes = useRoutes([
@@ -19,6 +20,7 @@ const AppRoutes = () => {
             element: <Layout />,
             children: [
                 { path: '/', element: <Home /> },
+                { path: '/courses/:courseId', element: <CourseDetails /> },
             ],
         },
     ]);
