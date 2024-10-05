@@ -11,7 +11,7 @@ const Layout = () => {
             <LeftSidebar />
 
             {/* Page Content */}
-            <div className="w-full max-w-full text-center p-3">
+            <div className="w-full max-w-full text-center p-3 flex flex-col gap-5">
                 <NavBar />
                 <Outlet />
             </div>
