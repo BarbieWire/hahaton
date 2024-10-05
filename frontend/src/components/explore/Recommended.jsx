@@ -1,7 +1,6 @@
 import React from "react";
 import { Table } from "flowbite-react";
 
-
 const Recommended = () => {
     return (
         <div className="overflow-x-auto">
